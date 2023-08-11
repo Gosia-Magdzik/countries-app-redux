@@ -1,7 +1,15 @@
+import { Route, Routes } from "react-router-dom"
 
 function App() {
   return (
-    <p>hello world</p>
+    <>
+      <p>hello world</p>
+      <Routes>
+        <Route>
+
+        </Route>
+      </Routes>
+    </>
   );
 }
 
