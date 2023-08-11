@@ -1,5 +1,7 @@
 import styled from "styled-components";
-import { ReactComponent as Sun } from "./sun.svg"
+import { ReactComponent as Sun } from "./sun.svg";
+import { ReactComponent as Moon } from "./night_sky.svg";
+
 
 export const Button = styled.button`
     color: ${({ theme }) => theme.colors.text};
@@ -14,15 +16,27 @@ export const Button = styled.button`
     font-weight: 600;
     white-space: nowrap;
 
-
     &&:hover {
         transform: scale(0.9);
         filter: brightness(1.5);
-        color: #E5C74B;
+
+    }
+
+    &&:active {
+        transform: scale(1.1);
+        filter: brightness(2);
     }
 `;
 
 export const StyledSun = styled(Sun)`
     width: 2em;
     height: 2em;
+
 `;
+
+export const StyledMoon = styled(Moon)`
+    width: 2em;
+    height: 2em;
+`;
+
+

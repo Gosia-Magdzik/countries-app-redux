@@ -16,7 +16,7 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0 auto;
     padding: 0;
     font-family: 'Nunito Sans', sans-serif;
-    background: hsl(207, 26%, 17%);
+    background: ${({ theme }) => theme.colors.background};
   }
 `;
 

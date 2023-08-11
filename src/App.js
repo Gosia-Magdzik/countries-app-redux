@@ -2,11 +2,16 @@ import  { Nav }  from "./Components/NavigationBar";
 import React from "react";
 import { ThemeProvider } from "styled-components";
 import { darkTheme, lightTheme } from "./theme";
-
+import { selectIsDarkMode } from "./Components/NavigationBar/ModeSwither/ModeSlice";
+import { useSelector } from "react-redux";
+import { GlobalStyle } from "./GlobalStyles";
 
 function App () {
+  const darkMode = useSelector(selectIsDarkMode);
+
   return (
-    <ThemeProvider theme={ darkTheme }>
+    <ThemeProvider theme={ darkMode ? darkTheme : lightTheme }>
+      <GlobalStyle/>
       <Nav/>
     </ThemeProvider>
   );
