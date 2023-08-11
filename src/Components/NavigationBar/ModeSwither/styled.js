@@ -22,7 +22,7 @@ export const Button = styled.button`
     }
 `;
 
-export const StyledSun = styled.Sun`
+export const StyledSun = styled(Sun)`
     width: 2em;
     height: 2em;
 `;
