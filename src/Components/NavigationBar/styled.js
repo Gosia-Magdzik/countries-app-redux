@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Header = styled.div`
   width: 100%;
@@ -12,12 +13,6 @@ export const Header = styled.div`
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-`;
-
-export const Title = styled.h5`
-  color: ${({theme}) => theme.colors.text};
-  margin: 0;
-  font-size: 3em;
 `;
 
 export const StyledLink = styled(Link)`

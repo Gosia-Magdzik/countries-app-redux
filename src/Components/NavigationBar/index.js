@@ -1,6 +1,13 @@
+import { StyledLink, Header } from "./styled"
+import { ModeSwitch } from "./ModeSwither";
 
 export const Nav = () => {
     return(
-        <p>test</p>
-    )
-}
+        <Header>
+            <StyledLink to="/">
+                Where in the world?
+            </StyledLink>
+            <ModeSwitch/>
+        </Header>
+    );
+};
