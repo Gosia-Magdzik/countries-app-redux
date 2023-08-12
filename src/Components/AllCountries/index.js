@@ -6,6 +6,8 @@ import {
     selectStatus
 } from "./countriesSlice";
 import { Loader } from "../Loading";
+import { CountryTile } from "./CountryTile";
+import { Wrapper } from "./styled";
 
 
 export const AllCountries = () => {
@@ -18,14 +20,25 @@ export const AllCountries = () => {
     }, []);
 
     return (
-        <>
-        {status === "loading" ? (
-            <Loader/>
-        ) : status === "succes" ? (
-            countries.map((country) => (
-                <p>...</p>
-            ))
-        ) : null}
-        </>
+        <Wrapper>
+            {
+            status === "loading" ? (
+                <Loader/>
+            ) : status === "succes" ? (
+                countries.map((country) => (
+                    <CountryTile
+                        key={country.name.common}
+                        flag={country.flags.png}
+                        name={country.name.official}
+                        population={country.population}
+                        region={country.region}
+                        capital={country.capital}
+                        cca3={country.cca3}
+                    />
+                ))
+            ) : (
+                <p>not found</p>
+            )}
+        </Wrapper>
     );
 };

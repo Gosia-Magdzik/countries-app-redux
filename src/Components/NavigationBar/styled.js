@@ -13,6 +13,7 @@ export const Header = styled.div`
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  box-shadow: 0px 10px 11px 0px rgba(66, 68, 90, 1);
 `;
 
 export const StyledLink = styled(Link)`
