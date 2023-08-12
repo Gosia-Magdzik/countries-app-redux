@@ -17,10 +17,10 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     font-family: 'Nunito Sans', sans-serif;
     background: ${({ theme }) => theme.colors.background};
+    transition: 1s ease-out;
   }
 `;
 
 export const Container = styled.div`
   margin: 10px 80px;
-  //max-width: 1800px;
-`
+`;

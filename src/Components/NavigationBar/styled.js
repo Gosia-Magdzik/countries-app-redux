@@ -13,7 +13,7 @@ export const Header = styled.div`
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  box-shadow: 19px 5px 20px 5px rgb(92 92 93 / 69%);
+  box-shadow: 19px 5px 20px 5px rgba(66, 68, 90, 1);
 
   @media (max-width: 992px) {
     flex-direction: column;
