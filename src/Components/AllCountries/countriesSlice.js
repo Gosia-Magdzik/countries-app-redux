@@ -28,7 +28,7 @@ export const {  fetchCountries,
 const selectCountriesState = (state) => state.countries;
 
 export const selectCountries = (state) => selectCountriesState(state).data;
-export const selectCStatus = (state) => selectCountriesState(state).status;
+export const selectStatus = (state) => selectCountriesState(state).status;
 
 // export const selectCountryByCCA3 = (state, code ) => {
 //     const countries = selectCountries(state);
