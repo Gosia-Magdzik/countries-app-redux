@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
     align-items: center;
     margin-bottom: 30px;
 
-    @media (max-width: 700px) {
+    @media (max-width: 910px) {
         flex-direction: column;
         margin-bottom: 0;
     }
@@ -51,5 +51,7 @@ export const Select = styled.select`
     @media (max-width: 700px) {
         margin: 20px 0 50px 0;
         font-size: 20px;
+        width: 500px;
+
     }
 `;

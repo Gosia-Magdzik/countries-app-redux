@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 
 export const Tile = styled.div`
-    max-width: 450px;
+    max-width: 550px;
     height: 700px;
     transition: all 0.5s ease-out 0s;
     box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
@@ -13,8 +13,12 @@ export const Tile = styled.div`
         transform: scale(1.05);
     }
 
-    @media (max-width: 767px) {
-        //margin: 50px;
+    @media (max-width: 1130px) {
+        width: 400px;
+    }
+
+    @media (max-width: 998px) {
+        width: 600px;
     }
 `;
 

@@ -15,10 +15,10 @@ export const Header = styled.div`
   margin: 0 auto;
   box-shadow: 19px 5px 20px 5px rgba(66, 68, 90, 1);
 
-  @media (max-width: 700px) {
+  @media (max-width: 730px) {
     flex-direction: column;
     margin: 5px 0;
-    height: 200px;
+    height: 250px;
   }
 `;
 
@@ -29,8 +29,10 @@ export const StyledLink = styled(Link)`
   font-size: 4em;
   font-weight: bold;
 
-  @media (max-width: 700px) {
+  @media (max-width: 730px) {
     font-size: 3em;
+    text-align: center;
+    justify-content: center;
   }
 `;
 

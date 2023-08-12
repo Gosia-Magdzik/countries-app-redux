@@ -46,3 +46,31 @@ export const Img = styled.img`
     margin: 0 200px 300px 0;
     aspect-ratio: auto;
 `;
+
+export const Data = styled.div`
+    color: ${({theme}) => theme.colors.text};
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+`;
+
+export const Details = styled.div`
+    color: ${({theme}) => theme.colors.text};
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+`;
+
+export const Name = styled.h1`
+    font-size: 60px;
+`;
+
+export const Col = styled.div`
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+`;
+
+export const Paragraph = styled.p`
+    margin: 5px;
+`;
