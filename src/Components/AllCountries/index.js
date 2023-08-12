@@ -8,7 +8,7 @@ import {
 import { Loader } from "../Loading";
 import { CountryTile } from "./CountryTile";
 import { Wrapper } from "./styled";
-
+import { SearchBar } from "../SearchBar";
 
 export const AllCountries = () => {
     const dispatch = useDispatch();
@@ -20,6 +20,8 @@ export const AllCountries = () => {
     }, []);
 
     return (
+        <>
+        <SearchBar/>
         <Wrapper>
             {
             status === "loading" ? (
@@ -40,5 +42,6 @@ export const AllCountries = () => {
                 <p>not found</p>
             )}
         </Wrapper>
+        </>
     );
 };
