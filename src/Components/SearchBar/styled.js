@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
     align-items: center;
     margin-bottom: 30px;
 
-    @media (max-width: 992px) {
+    @media (max-width: 700px) {
         flex-direction: column;
         margin-bottom: 0;
     }
@@ -25,7 +25,7 @@ export const Input = styled.input`
     box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
 
 
-    @media (max-width: 992px) {
+    @media (max-width: 700px) {
         max-width: 600px;
         margin: 20px;
     }
@@ -48,7 +48,7 @@ export const Select = styled.select`
     box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
 
     
-    @media (max-width: 992px) {
+    @media (max-width: 700px) {
         margin: 20px 0 50px 0;
         font-size: 20px;
     }
