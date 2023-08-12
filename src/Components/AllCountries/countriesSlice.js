@@ -30,16 +30,17 @@ const selectCountriesState = (state) => state.countries;
 export const selectCountries = (state) => selectCountriesState(state).data;
 export const selectStatus = (state) => selectCountriesState(state).status;
 
-// export const selectCountryByCCA3 = (state, code ) => {
-//     const countries = selectCountries(state);
+//details
+export const selectCountryByCCA3 = (state, code ) => {
+    const countries = selectCountries(state);
 
-//     if (!countries) {
-//         return null;
-//     }
-//     return countries.find(
-//         (country) => country.cca3.toUpperCase() === code.toUpperCase()
-//     );
-// };
+    if (!countries) {
+        return null;
+    }
+    return countries.find(
+        (country) => country.cca3.toUpperCase() === code.toUpperCase()
+    );
+};
 
 // export const selectCountriesByFilter = (state, searchQuery, regionQuery) => {
 //     const countries = selectCountries(state);
