@@ -6,6 +6,8 @@ import { selectIsDarkMode } from "./Components/NavigationBar/ModeSwither/ModeSli
 import { useSelector } from "react-redux";
 import { GlobalStyle, Container } from "./GlobalStyles";
 import { AllCountries } from "./Components/AllCountries"
+import { Route, Routes, Navigate } from "react-router-dom";
+import { Country } from "./Components/CountryDetails";
 
 function App () {
   const darkMode = useSelector(selectIsDarkMode);
@@ -15,7 +17,17 @@ function App () {
       <GlobalStyle/>
       <Nav/>
       <Container>
-        <AllCountries/>
+        <Routes>
+          <Route
+            path="/"
+            element={<AllCountries/>}
+          />
+          <Route
+            path="/country/:id"
+            element={<Country/>}
+          />
+          <Route path="*" element={<Navigate to="/" />} />
+        </Routes>
       </Container>
     </ThemeProvider>
   );
