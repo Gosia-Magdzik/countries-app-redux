@@ -1,7 +1,7 @@
 import { styled } from "styled-components";
 
 export const Tile = styled.div`
-    max-width: 550px;
+    width: 500px;
     height: 700px;
     transition: all 0.5s ease-out 0s;
     box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
