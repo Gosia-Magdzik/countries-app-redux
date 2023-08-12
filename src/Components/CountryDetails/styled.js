@@ -38,3 +38,11 @@ export const Wrapper = styled.div`
     gap: 20px;
   }
 `;
+
+export const Img = styled.img`
+    min-width: 290px;
+    max-width: 700px;
+    height: auto;
+    margin: 0 200px 300px 0;
+    aspect-ratio: auto;
+`;
