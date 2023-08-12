@@ -19,12 +19,15 @@ export const Button = styled.button`
     &&:hover {
         transform: scale(0.9);
         filter: brightness(1.5);
-
     }
 
     &&:active {
         transform: scale(1.1);
         filter: brightness(2);
+    }
+
+    @media (max-width: 992px) {
+        font-size: 2em;
     }
 `;
 
@@ -32,11 +35,20 @@ export const StyledSun = styled(Sun)`
     width: 2em;
     height: 2em;
 
+    @media (max-width: 992px) {
+        width: 1em;
+        height: 1em;
+    }
 `;
 
 export const StyledMoon = styled(Moon)`
     width: 2em;
     height: 2em;
+
+    @media (max-width: 992px) {
+        width: 1em;
+        height: 1em;
+    }
 `;
 
 

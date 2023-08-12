@@ -14,7 +14,7 @@ export const Tile = styled.div`
     }
 
     @media (max-width: 767px) {
-        margin: 50px;
+        //margin: 50px;
     }
 `;
 

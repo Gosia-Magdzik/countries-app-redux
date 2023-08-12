@@ -13,7 +13,13 @@ export const Header = styled.div`
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  box-shadow: 0px 10px 11px 0px rgba(66, 68, 90, 1);
+  box-shadow: 19px 5px 20px 5px rgb(92 92 93 / 69%);
+
+  @media (max-width: 992px) {
+    flex-direction: column;
+    margin: 5px 0;
+    height: 200px;
+  }
 `;
 
 export const StyledLink = styled(Link)`
@@ -22,4 +28,10 @@ export const StyledLink = styled(Link)`
   margin: 0;
   font-size: 4em;
   font-weight: bold;
+
+  @media (max-width: 992px) {
+    font-size: 3em;
+  }
 `;
+
+
