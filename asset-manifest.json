@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.js": "/countries-app-redux/static/js/main.40b3a1e8.js",
+    "static/js/787.5dac3425.chunk.js": "/countries-app-redux/static/js/787.5dac3425.chunk.js",
+    "static/media/night_sky.svg": "/countries-app-redux/static/media/night_sky.dcc1cac7bad2ae52e97071540a34c313.svg",
+    "static/media/sun.svg": "/countries-app-redux/static/media/sun.cd08cc51c2d444d1b4b9d37dc3d1eeb0.svg",
+    "index.html": "/countries-app-redux/index.html",
+    "main.40b3a1e8.js.map": "/countries-app-redux/static/js/main.40b3a1e8.js.map",
+    "787.5dac3425.chunk.js.map": "/countries-app-redux/static/js/787.5dac3425.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.40b3a1e8.js"
+  ]
+}
