@@ -19,3 +19,37 @@ const countriesSlice = createSlice({
         },
     },
 });
+
+export const {  fetchCountries, 
+                fetchCountriesFailed, 
+                fetchCountriesSucces 
+            } = countriesSlice.actions;
+
+const selectCountriesState = (state) => state.countries;
+
+export const selectCountries = (state) => selectCountriesState(state).data;
+export const selectCStatus = (state) => selectCountriesState(state).status;
+
+// export const selectCountryByCCA3 = (state, code ) => {
+//     const countries = selectCountries(state);
+
+//     if (!countries) {
+//         return null;
+//     }
+//     return countries.find(
+//         (country) => country.cca3.toUpperCase() === code.toUpperCase()
+//     );
+// };
+
+// export const selectCountriesByFilter = (state, searchQuery, regionQuery) => {
+//     const countries = selectCountries(state);
+
+//     if (!regionQuery && !searchQuery) {
+//         return countries;
+//     }
+
+//     let filtredCountries
+// }
+
+
+export default countriesSlice.reducer;
