@@ -31,6 +31,7 @@ export const Wrapper = styled.div`
     align-items: flex-start;
     display: flex;
     flex-direction: row;
+    justify-content: center;
 
     @media (max-width: 1100px) {
     flex-wrap: wrap;
