@@ -25,7 +25,7 @@ export const Input = styled.input`
     box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
 
 
-    @media (max-width: 700px) {
+    @media (max-width: 730px) {
         max-width: 600px;
         margin: 20px;
     }
@@ -48,10 +48,9 @@ export const Select = styled.select`
     box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
 
     
-    @media (max-width: 700px) {
-        margin: 20px 0 50px 0;
+    @media (max-width: 730px) {
+        margin: 20px 10px 50px 10px;
         font-size: 20px;
-        width: 500px;
-
+        max-width: 500px;
     }
 `;

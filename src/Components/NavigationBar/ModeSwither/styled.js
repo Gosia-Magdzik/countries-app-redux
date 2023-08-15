@@ -26,7 +26,7 @@ export const Button = styled.button`
         filter: brightness(2);
     }
 
-    @media (max-width: 700px) {
+    @media (max-width: 730px) {
         font-size: 2em;
     }
 `;
@@ -35,7 +35,7 @@ export const StyledSun = styled(Sun)`
     width: 2em;
     height: 2em;
 
-    @media (max-width: 700px) {
+    @media (max-width: 730px) {
         width: 1em;
         height: 1em;
     }
