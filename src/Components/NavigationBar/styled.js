@@ -30,9 +30,10 @@ export const StyledLink = styled(Link)`
   font-weight: bold;
 
   @media (max-width: 730px) {
-    font-size: 3em;
+    font-size: 5em;
     text-align: center;
     justify-content: center;
+    margin-top: 5px;
   }
 `;
 

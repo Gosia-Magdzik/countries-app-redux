@@ -32,19 +32,28 @@ export const Wrapper = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
+    gap: 200px;
 
     @media (max-width: 1100px) {
-    flex-wrap: wrap;
-    gap: 20px;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: center;
   }
 `;
 
 export const Img = styled.img`
-    min-width: 290px;
-    max-width: 700px;
+    min-width: 800px;
+    max-width: 1000px;
     height: auto;
-    margin: 0 200px 300px 0;
+    //margin: 0 200px 300px 0;
     aspect-ratio: auto;
+    border-radius: 5px;
+    align-self: center;
+
+    @media (max-width: 1100px) {
+        margin: 0 0px 0px 0;
+
+  }
 `;
 
 export const Data = styled.div`
@@ -59,6 +68,10 @@ export const Details = styled.div`
     display: flex;
     flex-direction: row;
     font-size: 25px;
+
+    @media (max-width: 1100px) {
+    flex-direction: column;
+  }
 `;
 
 export const Name = styled.h1`
@@ -73,4 +86,12 @@ export const Col = styled.div`
 
 export const Paragraph = styled.p`
     margin: 5px;
+`;
+
+export const BordersContainer = styled.label`
+    color: ${({theme}) => theme.colors.text};
+    //background-color: ${({ theme }) => theme.colors.elements};
+    font-size: 25px;
+    margin-top: 100px;
+    //cursor: pointer;
 `;
