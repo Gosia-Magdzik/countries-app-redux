@@ -1,4 +1,4 @@
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { 
     Button, 
     ButtonLink, 
@@ -9,7 +9,8 @@ import {
     Name, 
     Col, 
     Paragraph,
-    BordersContainer } 
+    BordersContainer,
+    BorderLink } 
 from "./styled";
 import { ReactComponent as LeftArrowLight } from './arrow_left_white.svg';
 import { Loader } from "../Loading";
@@ -65,12 +66,12 @@ export const Country = () => {
                             <p>{data.borders}</p>
                         ) : (
                             data.borders.map((borderCountry) =>(
-                                <Link
+                                <BorderLink
                                     to={`/country/${borderCountry}`}
                                     key={borderCountry} 
                                 >
                                     {borderCountry}
-                                </Link>
+                                </BorderLink>
                             ))
                         )}
                     </BordersContainer>

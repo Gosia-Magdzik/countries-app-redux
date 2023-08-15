@@ -89,9 +89,19 @@ export const Paragraph = styled.p`
 `;
 
 export const BordersContainer = styled.label`
-    color: ${({theme}) => theme.colors.text};
-    //background-color: ${({ theme }) => theme.colors.elements};
     font-size: 25px;
     margin-top: 100px;
-    //cursor: pointer;
+`;
+
+export const BorderLink = styled(StyledLink)`
+    background-color: ${({ theme }) => theme.colors.elements};
+    font-size: 25px;
+    cursor: pointer;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+    color: ${({theme}) => theme.colors.text};
+
+
 `;
