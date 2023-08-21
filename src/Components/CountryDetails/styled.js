@@ -46,9 +46,8 @@ export const Img = styled.img`
     min-width: 800px;
     max-width: 1000px;
     height: auto;
-    //margin: 0 200px 300px 0;
     aspect-ratio: auto;
-    border-radius: 5px;
+    border-radius: 15px;
     align-self: center;
 
     @media (max-width: 1100px) {
@@ -103,6 +102,15 @@ export const BorderLink = styled(StyledLink)`
     border-radius: 5px;
     margin: 10px;
     color: ${({theme}) => theme.colors.text};
+    transition: all 0.5s ease-out 0s;
 
+    &&:hover {
+        transform: scale(0.9);
+        filter: brightness(1.5);
+    }
 
+    &&:active {
+        transform: scale(1.1);
+        filter: brightness(2);
+    }
 `;

@@ -42,15 +42,29 @@ export const selectCountryByCCA3 = (state, code ) => {
     );
 };
 
-// export const selectCountriesByFilter = (state, searchQuery, regionQuery) => {
-//     const countries = selectCountries(state);
+ export const selectCountriesByFilter = (state, searchQuery, regionQuery) => {
+     const countries = selectCountries(state)
 
-//     if (!regionQuery && !searchQuery) {
-//         return countries;
-//     }
+    if (!regionQuery && !searchQuery) {
+        return countries;
+    }
+    
+    let filtredCountries = countries;
 
-//     let filtredCountries
-// }
+    if (regionQuery) {
+        filtredCountries = filtredCountries.filter(({ region }) =>
+          region.includes(regionQuery)
+        );
+    }
+
+    if (searchQuery && searchQuery.trim() !== "") {
+        filtredCountries = filtredCountries.filter(({ name }) =>
+        name.common.toUpperCase().includes(searchQuery.trim().toUpperCase())
+        );
+    }
+
+    return filtredCountries;
+ };
 
 
 export default countriesSlice.reducer;
