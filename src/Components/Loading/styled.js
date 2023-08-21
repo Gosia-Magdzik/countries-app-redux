@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled, { keyframes, css } from "styled-components";
 
 const Animation = keyframes`
   0% {
@@ -30,8 +30,11 @@ export const Hourglass = styled.div`
     height: 0;
     margin: 50px;
     box-sizing: border-box;
-    border: 100px solid #fff;
-    border-color: #fff transparent #fff transparent;
+    border: 100px solid ${props => (props.darkMode ? 'white' : 'black')};
+    border-color: ${props =>
+      props.darkMode
+        ? 'white transparent white transparent'
+        : 'black transparent black transparent'};
     animation: ${Animation} 1.2s infinite;
   }
 `;
