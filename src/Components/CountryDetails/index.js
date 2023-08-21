@@ -13,14 +13,19 @@ import {
     BorderLink } 
 from "./styled";
 import { ReactComponent as LeftArrowLight } from './arrow_left_white.svg';
+import { ReactComponent as LeftArrowDark } from "./arrow_left_black.svg";
 import { Loader } from "../Loading";
 import { useData } from "./useData";
 import { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
+import { selectIsDarkMode } from "../NavigationBar/ModeSwither/ModeSlice";
 
 export const Country = () => {
     const { id } = useParams();
     const data = useData(id);
     const [isLoading, setIsLoading] = useState(true);
+    const darkMode = useSelector(selectIsDarkMode);
+
 
     useEffect(() => {
         const timeout = setTimeout(() => {
@@ -33,7 +38,7 @@ export const Country = () => {
         <>
         <Button>
             <ButtonLink to="/">
-                <LeftArrowLight/>
+                {darkMode ? <LeftArrowLight/> : <LeftArrowDark />}
                 &nbsp;&nbsp; Back
             </ButtonLink>
         </Button>
