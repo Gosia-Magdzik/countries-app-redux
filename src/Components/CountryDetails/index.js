@@ -33,7 +33,8 @@ export const Country = () => {
         <>
         <Button>
             <ButtonLink to="/">
-                <LeftArrowLight/>&nbsp;&nbsp; Back
+                <LeftArrowLight/>
+                &nbsp;&nbsp; Back
             </ButtonLink>
         </Button>
         <Wrapper>

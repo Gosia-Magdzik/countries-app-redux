@@ -13,6 +13,7 @@ export const Button = styled.button`
     display: flex;
     align-items: center;
     margin-top: 100px;
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
 
     &:hover {
         transform: scale(.9);
