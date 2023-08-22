@@ -49,6 +49,7 @@ export const CountryData = styled.div`
     color: ${({theme}) => theme.colors.text};
     padding: 20px 0 0px 40px;
     border-radius: 0 0 20px 20px ;
+    margin-bottom: 30px;
 
     @media (max-width: 490px) {
         padding: 15px;
