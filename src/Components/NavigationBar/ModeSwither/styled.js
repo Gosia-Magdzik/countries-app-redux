@@ -18,12 +18,10 @@ export const Button = styled.button`
 
     &&:hover {
         transform: scale(0.9);
-        filter: brightness(1.5);
     }
 
     &&:active {
         transform: scale(1.1);
-        filter: brightness(2);
     }
 
     @media (max-width: 730px) {
@@ -38,6 +36,18 @@ export const Button = styled.button`
 export const StyledSun = styled(Sun)`
     width: 2em;
     height: 2em;
+    transition: all 0.3s ease-out 0s;
+
+    &:hover {
+        transform: rotate(90deg);
+        filter: brightness(1.5);
+    }
+
+    &:active {
+        transform: rotate(180deg);
+    }
+
+
 
     @media (max-width: 730px) {
         width: 2em;
@@ -48,10 +58,19 @@ export const StyledSun = styled(Sun)`
 export const StyledMoon = styled(Moon)`
     width: 2em;
     height: 2em;
+    transition: all 0.3s ease-out 0s;
 
     @media (max-width: 700px) {
         width: 1em;
         height: 1em;
+    }
+
+    &:hover {
+        transform: rotate(180deg) scale(0.9);
+    }
+
+    &:active {
+        transform: rotate(360deg) scale(0.8);
     }
 `;
 

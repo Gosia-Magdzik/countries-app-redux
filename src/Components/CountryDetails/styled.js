@@ -43,7 +43,7 @@ export const ButtonLink = styled(StyledLink)`
 `;
 
 export const Wrapper = styled.div`
-    margin-top: 100px;
+    margin: 100px 0;
     align-items: flex-start;
     display: flex;
     flex-direction: row;
@@ -64,8 +64,8 @@ export const Wrapper = styled.div`
 `;
 
 export const Img = styled.img`
-    max-width: 1000px;
-    height: auto;
+    width: 1200px;
+    //height: 550px;
     aspect-ratio: auto;
     border-radius: 15px;
     align-self: center;
@@ -94,6 +94,7 @@ export const Details = styled.div`
     display: flex;
     flex-direction: row;
     font-size: 25px;
+    justify-content: space-around;
 
     @media (max-width: 1100px) {
     flex-direction: column;
@@ -132,15 +133,13 @@ export const B = styled.p`
     white-space: nowrap;
 `;
 
-
-
-export const BordersContainer = styled.label`
+export const BordersContainer = styled.p`
     font-size: 35px;
-    margin-top: 80px;
+    margin-top: 20px;
 
     @media (max-width: 490px) {
-    font-size: 20px;
-    margin-top: 5px;
+        font-size: 20px;
+        margin-top: 5px;
   }
 `;
 
@@ -156,12 +155,12 @@ export const BorderLink = styled(StyledLink)`
     transition: all 0.5s ease-out 0s;
 
     &&:hover {
-        transform: scale(0.9);
+        transform: scale(1.2);
         filter: brightness(1.5);
     }
 
     &&:active {
-        transform: scale(1.1);
+        transform: scale(1.3);
         filter: brightness(2);
     }
 
