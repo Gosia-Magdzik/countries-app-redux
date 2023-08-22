@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.js": "/countries-app-redux/static/js/main.bf72d14c.js",
+    "main.js": "/countries-app-redux/static/js/main.09d6afbf.js",
     "static/js/787.5dac3425.chunk.js": "/countries-app-redux/static/js/787.5dac3425.chunk.js",
     "static/media/night_sky.svg": "/countries-app-redux/static/media/night_sky.dcc1cac7bad2ae52e97071540a34c313.svg",
     "static/media/sun.svg": "/countries-app-redux/static/media/sun.cd08cc51c2d444d1b4b9d37dc3d1eeb0.svg",
     "index.html": "/countries-app-redux/index.html",
     "static/media/arrow_left_black.svg": "/countries-app-redux/static/media/arrow_left_black.3cc768212ca65ffd1d2fb6d0c3046096.svg",
     "static/media/arrow_left_white.svg": "/countries-app-redux/static/media/arrow_left_white.aea4cc0b395c54098ce57cbc02058656.svg",
-    "main.bf72d14c.js.map": "/countries-app-redux/static/js/main.bf72d14c.js.map",
+    "main.09d6afbf.js.map": "/countries-app-redux/static/js/main.09d6afbf.js.map",
     "787.5dac3425.chunk.js.map": "/countries-app-redux/static/js/787.5dac3425.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.bf72d14c.js"
+    "static/js/main.09d6afbf.js"
   ]
 }
