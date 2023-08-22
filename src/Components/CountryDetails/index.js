@@ -7,8 +7,9 @@ import {
     Data,
     Details, 
     Name, 
-    Col, 
-    Paragraph,
+    Col,
+    P,
+    B, 
     BordersContainer,
     BorderLink } 
 from "./styled";
@@ -54,16 +55,16 @@ export const Country = () => {
                     <Name>{data.commonName}</Name>
                     <Details>
                         <Col>
-                            <Paragraph><b>Native Name:</b>&nbsp;{data.officialName}</Paragraph>
-                            <Paragraph><b>Population:</b>&nbsp;{new Intl.NumberFormat().format(data.population)}</Paragraph>
-                            <Paragraph><b>Region:</b>&nbsp;{data.region}</Paragraph>
-                            <Paragraph><b>Sub Region:</b>&nbsp;{data.subRegion}</Paragraph>
-                            <Paragraph><b>Capital:</b>&nbsp;{data.capital}</Paragraph>
+                            <P><B>Native Name:</B>{data.officialName}</P>
+                            <P><B>Population:</B>{new Intl.NumberFormat().format(data.population)}</P>
+                            <P><B>Region:</B>{data.region}</P>
+                            <P><B>Sub Region:</B>{data.subRegion}</P>
+                            <P><B>Capital:</B>{data.capital}</P>
                         </Col>
                         <Col>
-                            <Paragraph><b>Top Level Domain:</b>&nbsp;{data.tld}</Paragraph>
-                            <Paragraph><b>Currencies:</b>&nbsp;{data.currencies}</Paragraph>
-                            <Paragraph><b>Languages:</b>&nbsp;{data.languages}</Paragraph>
+                            <P><B>Top Level Domain:</B>{data.tld}</P>
+                            <P><B>Currencies:</B>{data.currencies}</P>
+                            <P><B>Languages:</B>{data.languages}</P>
                         </Col>
                     </Details>
                     <Name>Border Countries:</Name>

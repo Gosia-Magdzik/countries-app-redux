@@ -110,11 +110,20 @@ export const Col = styled.div`
     display: flex;
     flex-direction: column;
     margin-right: 100px;
-`;
-
-export const Paragraph = styled.p`
     margin: 5px;
 `;
+
+export const P = styled.p`
+    margin: 5px;
+`;
+
+export const B = styled.p`
+    font-weight: bold;
+    margin: 0;
+    white-space: nowrap;
+`;
+
+
 
 export const BordersContainer = styled.label`
     font-size: 35px;
