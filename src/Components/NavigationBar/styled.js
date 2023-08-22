@@ -5,7 +5,6 @@ export const Header = styled.div`
   width: 100%;
   height: 150px;
   background-color: ${({theme}) => theme.colors.elements};
-  line-height: 70px;
   padding: 0 80px;
   transition: all 0.5s ease-out 0s;
   display: flex;
@@ -16,9 +15,9 @@ export const Header = styled.div`
   box-shadow: 19px 5px 20px 5px rgba(66, 68, 90, 1);
 
   @media (max-width: 730px) {
-    flex-direction: column;
-    margin: 5px 0;
+    flex-direction: row;
     height: auto;
+    padding: 10px 10px;
   }
 `;
 
@@ -37,9 +36,9 @@ export const StyledLink = styled(Link)`
   }
 
   @media (max-width: 490px) {
-    font-size: 40px;
+    font-size: 20px;
     text-align: center;
-    justify-content: center;
+    justify-content: left;
     margin-top: 5px;
   }
 `;

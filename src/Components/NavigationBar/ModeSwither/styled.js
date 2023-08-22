@@ -31,7 +31,7 @@ export const Button = styled.button`
     }
 
     @media (max-width: 490px) {
-        font-size: 20px;
+        font-size: 15px;
     }
 `;
 

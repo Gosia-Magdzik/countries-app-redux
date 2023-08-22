@@ -10,8 +10,6 @@ export const Button = styled.button`
     font-size: 20px;
     border-radius: 10px;
     border: none;
-    display: flex;
-    align-items: center;
     margin-top: 100px;
     box-shadow: 8px 8px 14px 0px rgba(66, 68, 90, 1);
 
@@ -19,9 +17,14 @@ export const Button = styled.button`
         transform: scale(.9);
     }
 
+    &:active {
+        transform: scale(.8);
+        filter: brightness(2);
+    }
+
     @media (max-width: 490px) {
         margin-top: 20px;
-        font-size: 10px;
+        padding: 10px 20px;
     }
 `;
 
@@ -30,6 +33,13 @@ export const ButtonLink = styled(StyledLink)`
     color: ${({theme}) => theme.colors.text};
     cursor: pointer;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 490px) {
+        font-size: 20px;
+    }
 `;
 
 export const Wrapper = styled.div`
@@ -47,10 +57,9 @@ export const Wrapper = styled.div`
     }
 
     @media (max-width: 490px) {
-        width: 200px;
         height: auto;
         align-items: center;
-
+        margin-top: 40px;
     }
 `;
 
