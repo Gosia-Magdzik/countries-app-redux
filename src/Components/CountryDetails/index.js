@@ -66,8 +66,8 @@ export const Country = () => {
                             <Paragraph><b>Languages:</b>&nbsp;{data.languages}</Paragraph>
                         </Col>
                     </Details>
+                    <Name>Border Countries:</Name>
                     <BordersContainer>
-                        <b>Border Countries:</b>&nbsp;
                         {data.borders === "No Data" ? (
                             <p>{data.borders}</p>
                         ) : (

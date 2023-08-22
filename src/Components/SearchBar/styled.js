@@ -28,6 +28,13 @@ export const Input = styled.input`
     @media (max-width: 730px) {
         max-width: 600px;
         margin: 20px;
+        font-size: 20px;
+    }
+
+    @media (max-width: 490px) {
+        max-width: 300px;
+        margin: 10px;
+        font-size: 15px;
     }
 
     &::placeholder {
@@ -52,5 +59,11 @@ export const Select = styled.select`
         margin: 20px 10px 50px 10px;
         font-size: 20px;
         max-width: 500px;
+    }
+
+    @media (max-width: 490px) {
+        max-width: 250px;
+        margin: 30px;
+        font-size: 15px;
     }
 `;

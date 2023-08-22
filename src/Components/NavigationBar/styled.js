@@ -18,7 +18,7 @@ export const Header = styled.div`
   @media (max-width: 730px) {
     flex-direction: column;
     margin: 5px 0;
-    height: 250px;
+    height: auto;
   }
 `;
 
@@ -30,7 +30,14 @@ export const StyledLink = styled(Link)`
   font-weight: bold;
 
   @media (max-width: 730px) {
-    font-size: 5em;
+    font-size: 45px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 5px;
+  }
+
+  @media (max-width: 490px) {
+    font-size: 40px;
     text-align: center;
     justify-content: center;
     margin-top: 5px;

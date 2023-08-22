@@ -29,6 +29,10 @@ export const Button = styled.button`
     @media (max-width: 730px) {
         font-size: 2em;
     }
+
+    @media (max-width: 490px) {
+        font-size: 20px;
+    }
 `;
 
 export const StyledSun = styled(Sun)`
@@ -36,8 +40,8 @@ export const StyledSun = styled(Sun)`
     height: 2em;
 
     @media (max-width: 730px) {
-        width: 1em;
-        height: 1em;
+        width: 2em;
+        height: 2em;
     }
 `;
 
