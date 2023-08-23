@@ -40,7 +40,6 @@ export const Img = styled.img`
     }
 `;
 
-
 export const CountryData = styled.div`
     background-color: ${({ theme }) => theme.colors.elements};
     width: 100%;

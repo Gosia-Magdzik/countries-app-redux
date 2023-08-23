@@ -25,7 +25,8 @@ export const AllCountries = () => {
 
     const countries = useSelector((state) => 
         selectCountriesByFilter(state, searchQuery, regionQuery)
-    );
+    ) || [];
+
     const status = useSelector(selectStatus);
 
     const dispatch = useDispatch();
@@ -45,7 +46,7 @@ export const AllCountries = () => {
             {
             status === "loading" ? (
                 <Loader/>
-            ) : status === "succes" ? (
+            ) : countries.length > 0 ? (
                 currentPosts.map((country) => (
                     <CountryTile
                         key={country.name.common}
