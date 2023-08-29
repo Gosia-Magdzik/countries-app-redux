@@ -21,6 +21,11 @@ export const Hourglass = styled.div`
   width: 200px;
   height: 200px;
 
+  @media (max-width: 490px) {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto; 
+  }
 
   &:after {
     content: " ";
@@ -36,6 +41,12 @@ export const Hourglass = styled.div`
         ? 'white transparent white transparent'
         : 'black transparent black transparent'};
     animation: ${Animation} 1.2s infinite;
+  
+    @media (max-width: 490px) {
+      margin: 25px;
+      //border: 50px solid ${props => (props.darkMode ? 'white' : 'black')};
+    }
+  
   }
 `;
 

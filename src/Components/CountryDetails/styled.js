@@ -59,13 +59,12 @@ export const Wrapper = styled.div`
     @media (max-width: 490px) {
         height: auto;
         align-items: center;
-        margin-top: 40px;
+        margin: 10px;
     }
 `;
 
 export const Img = styled.img`
     width: 1200px;
-    //height: 550px;
     aspect-ratio: auto;
     border-radius: 15px;
     align-self: center;
@@ -79,6 +78,7 @@ export const Img = styled.img`
     @media (max-width: 490px) {
         width: 350px;
         height: auto;
+        margin-top: 30px;
     }
 `;
 

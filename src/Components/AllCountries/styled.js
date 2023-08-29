@@ -7,4 +7,5 @@ export const Wrapper = styled.div`
     margin: auto 5px;
     gap: 60px;
     align-items: center;
+    padding: 10px;
 `;

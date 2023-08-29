@@ -62,6 +62,7 @@ export const Name = styled.h1`
 export const Details = styled.p`
     margin-bottom: 0.5px;
     font-size: 25px;
+    word-break: break-all;
 
     @media (max-width: 490px) {
         margin: 0.5px;
