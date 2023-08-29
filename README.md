@@ -1,3 +1,25 @@
+# REST Countries API with color theme switcher
+
+Aplicacion is a part of [Frontend Mentor Challenges](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca). Challenge was integrating with the REST Countries API to pull country data and display it like in the designs. Watch out the result
+
+# [Link to the Website](your_website_url_here)
+
+# Quick Preview
+
+![preview](./countries.gif)
+
+# Adventages
+
+- Thanks to the implemented <b>pagination</b>  content is organizing making it easier to explore a large dataset, 
+- Responsiveness 💪,
+- Loading state ⏳,
+- Switching between dark and light theme,
+- Filtering,
+- Country's details displaying after clicking on the country tile,
+- Active border countries tiles enables displaying next border countries details
+- Finished with careful attention to details ☝️
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -13,11 +35,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
