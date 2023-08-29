@@ -29,6 +29,8 @@ export const Input = styled.input`
         max-width: 600px;
         margin: 20px;
         font-size: 20px;
+        padding: 15px;
+
     }
 
     @media (max-width: 490px) {
@@ -59,6 +61,7 @@ export const Select = styled.select`
         margin: 20px 10px 50px 10px;
         font-size: 20px;
         max-width: 500px;
+        padding: 15px;
     }
 
     @media (max-width: 490px) {

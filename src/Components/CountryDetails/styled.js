@@ -136,6 +136,8 @@ export const B = styled.p`
 export const BordersContainer = styled.p`
     font-size: 35px;
     margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
 
     @media (max-width: 490px) {
         font-size: 20px;
@@ -153,6 +155,7 @@ export const BorderLink = styled(StyledLink)`
     margin: 10px;
     color: ${({theme}) => theme.colors.text};
     transition: all 0.5s ease-out 0s;
+    
 
     &&:hover {
         transform: scale(1.2);
