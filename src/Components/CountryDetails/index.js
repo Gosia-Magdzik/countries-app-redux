@@ -16,6 +16,7 @@ from "./styled";
 import { ReactComponent as LeftArrowLight } from './arrow_left_white.svg';
 import { ReactComponent as LeftArrowDark } from "./arrow_left_black.svg";
 import { Loader } from "../Loading";
+import { Error } from "../Error";
 import { useData } from "./useData";
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
@@ -47,7 +48,7 @@ export const Country = () => {
             { isLoading ? (
                 <Loader/>
             ) : !data ? (
-                <p>error</p>
+                <Error/>
             ) : (
                 <>
                 <Img src={data.flag}/>
